@@ -1,0 +1,470 @@
+/*--------------------------------------HEADER FOR MEDIUM AND LARGE DISPLAYS*/
+
+body,
+html,
+body-div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    
+} 
+
+.header-container {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}
+
+.header-desktop-row {
+    background: url("../otherimages/redcar_a.jpg");
+    background-position: relative;
+    background-repeat: no-repeat /* top left fixed */;
+    background-size: cover;
+    height: 100vh;
+    min-height: 360px;
+    /* min-width: 100%; */
+    /* width: 100vw; */
+    top: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-background-size: cover;	/* works on WebKit browsers */
+     -moz-background-size: cover;	/* works on Mozilla browsers */
+     -o-background-size: cover;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.header-desktop-column {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0; 
+}
+
+.header-desktop-row.col-12, 
+.header-phones.col-12 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row.no-gutters>[class^="col-"],
+.row.no-gutters>[class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+.header-container cover-img {
+    width: 100%;
+    /* height: auto; */
+}
+
+.header-container span {
+    background: url("../otherimages/MonkeesLogo.gif") no-repeat;
+    position: absolute;
+    top: -42%;
+    bottom: 0;
+    left: 23%;
+    right: 0;
+    width: 100%;
+    /* set to 100% to make it work on a mobile */
+    height: 100%;
+    z-index: 1;
+    background-position: right;
+    transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+}
+
+.imgTop {
+    display: block;
+}
+
+.fifty {
+    position: absolute;
+    top: 16%;
+    right: 16px;
+    color: #64c8fa;
+    font-size: small;
+    font-weight: bold;
+    text-shadow: 1px 1px #0eaee4;
+    font-family: Roboto, san-serif;
+    letter-spacing: 1px;
+}
+
+/*-------------------------------------------HEADER FOR SMALL DISPLAYS */
+/* 
+.header-container-phones {
+    background: url("../otherimages/hqdefault2.jpg");
+    background-position: relative;
+    background-repeat: no-repeat top left fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 360px; 
+    max-width: 100%;
+    color: #ffff00;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+} */
+
+.header-phones-row {
+    background: url("../otherimages/hqdefault2.jpg"); 
+    background-repeat: no-repeat top left fixed;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0; 
+   display: flex; 
+    width: 100%;
+    min-height: 360px;
+    max-width: 100%;
+    height: 70vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    /* height: 0vh; */
+}
+
+.header-phones-column {
+    position: relative;
+    width: 100%;
+    padding: 0 0px 0px;
+    min-height: 360px;
+    margin: 0 0px 0px 0;
+    float: none;
+}
+
+/*---------------------------------------------------------------Section CSS */
+
+.section-photo-column {
+    padding: 0 0px 0px;
+    min-height: 200px;
+    margin: 10% auto;
+    float: none;
+    /* make sure our columns don't have unsightly breaks */
+}
+
+.section-photo-row {
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 0vh; */
+}
+
+/*--------------------------------------------------------NAVBAR */
+
+/* Navbar - make sure to include a z-index of 1 to bring the navalert-container
+forward otherwise it will be hidden behind other elements.  */
+
+.navalert-container {
+    position: relative;
+    top: 0;
+    left: 0; 
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(255, 218, 155, 0.25);
+    color: #64c8fa;
+    text-shadow: 1px 1px #0eaee4;
+    font-family: Roboto, san-serif;
+    letter-spacing: 1px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #64c8fa;
+    text-shadow: 1px 1px #0eaee4;
+    font-family: Roboto, san-serif;
+    letter-spacing: 1px;
+}
+
+
+/* navbar-nav is the parent container for the navigation part.  Give all 
+“a” links the font weight of bold */
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+    padding: 10px;
+    color: #64c8fa;
+}
+
+.navbar .navbar-nav a:hover {
+    color: white;
+}
+
+.nav-right {
+    float: right;
+    text-align: right;
+}
+
+
+
+.section-color-white {
+    color: white;
+}
+
+.section-color-blue {
+    color: #64c8fa;
+}
+
+.section-color-black {
+    color: black;
+    font-weight: 400;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 0;
+}
+
+
+/* align the bottom of the image with the bottom of the navigation items */
+
+#nav {
+    margin: 0;
+}
+
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
+
+/* Here we style the navbar text including Font Awesome icons.  120px is 
+the height for this section and one third the overall height of the 360px above. */
+
+.menuitem {
+    height: 30px;
+    text-align: center;
+    padding: 0;
+
+}
+
+/*------------------------------------------------------------BUTTONS */
+
+/* Style the call to action button because Bootstrap btn-success looks too 
+generic */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 25px;
+    width: 190px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+.btn--blue {
+    color: white;
+    background-color: #5fc3f5;
+    border-color: #5fc3f5;
+}
+
+/* Hover over the button behavior pseudo elements */
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn:active:focus {
+    background-color: #f53108;
+    border-color: #f53108;
+}
+
+/*---------------------------------------------------EVENT CALENDAR */
+
+.bg-color-event-calendar {
+    background-color: #64c8fa;
+}
+
+.section-column {
+    padding: 0 30px 30px;
+    min-height: 400px;
+    float: none;
+    /* make sure our columns don't have unsightly breaks */
+}
+
+.history-heading,
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.history-items {
+    margin-bottom: 30px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    /* top right bottom left */
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the circle indicator and place it on the left border line.
+child style is in an absolute position to the parent div.  block means the item 
+stands alone (not next to anything). -6px moves the circle onto the vertical 
+border line. 
+*/
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+
+/* align the paragraphs using parent padding and margins. 
+the heading <h4> is styled above with margin: 0;  */
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.bg-color-schedule-event {
+    background-color: #fff;
+    /* white */
+}
+
+.schedule-event-icon {
+    font-size: 26px;
+    color: #e67e22;
+}
+
+.schedule-event-heading {
+    margin-bottom: 15px;
+}
+
+/*---------------------------------------------BLOCK DIVIDER ON LANDING PAGE */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
+    /* use a background color otherwise the divider won't appear */
+}
+
+.block-divider-tall {
+    top: 10px;
+    width: 75px;
+    height: 20px;
+    border: 0;
+    background-color: #444;
+    /* use a background color otherwise the divider won't appear */
+}
+
+.block-divider--blue {
+    background-color: #64c8fa;
+}
+
+.block-divider--medium {
+    width: 70px;
+}
+
+/*------------------------------------------------------FOOTER */
+
+footer {
+    background-color: rgba(255, 218, 155, 0.25);
+    color: #64c8fa;
+    min-height: 60px;
+    margin: 0;
+    padding: 20px;
+    text-shadow: 1px 1px #0eaee4;
+    font-family: Roboto, san-serif;
+    letter-spacing: 1px;
+}
+
+
+
+#footer-details {
+    padding: 20px;
+    /* add padding to the top, bottom, left and right */
+}
+
+.social-links li a i {
+    width: 16px;
+    height: 32px;
+    padding: 12px 0;
+    font-size: 18px;
+    line-height: 7px;
+    text-align: center;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    color: black;
+}
+
+
+/*------------------------------------------------------------AUDIO SCREEN */
+
+.samples {
+    color: #64c8fa;
+    font-weight: bold;
+
+}
+
+#audio-list, 
+#video-list,
+#photo-list {
+    font-size: 20px;
+    margin: 10px 10px 10px 50px;
+}
+
+.list-attributes {
+    font-size: 20px; 
+    color: black; 
+    font-weight: 400;
+}
