@@ -13,25 +13,15 @@ body-div {
     
 } 
 
-.header-container {
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-}
-
 .header-desktop-row {
     background: url("../otherimages/redcar_a.jpg");
     background-position: relative;
-    background-repeat: no-repeat /* top left fixed */;
+    background-repeat: no-repeat top left fixed ;
     background-size: cover;
-    height: 100vh;
+    height: 40vh;
     min-height: 360px;
-    /* min-width: 100%; */
-    /* width: 100vw; */
     top: 0;
     left: 0;
-    margin-left: auto;
-    margin-right: auto;
     -webkit-background-size: cover;	/* works on WebKit browsers */
      -moz-background-size: cover;	/* works on Mozilla browsers */
      -o-background-size: cover;
@@ -48,33 +38,7 @@ body-div {
     margin-right: 0; 
 }
 
-.header-desktop-row.col-12, 
-.header-phones.col-12 {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.row.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.row.no-gutters>[class^="col-"],
-.row.no-gutters>[class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-
-.header-container cover-img {
-    width: 100%;
-    /* height: auto; */
-}
-
-.header-container span {
+.header-desktop-row span {
     background: url("../otherimages/MonkeesLogo.gif") no-repeat;
     position: absolute;
     top: -42%;
@@ -82,7 +46,6 @@ body-div {
     left: 23%;
     right: 0;
     width: 100%;
-    /* set to 100% to make it work on a mobile */
     height: 100%;
     z-index: 1;
     background-position: right;
@@ -90,11 +53,11 @@ body-div {
     -ms-transform: scale(0.5, 0.5);
     -webkit-transform: scale(0.5, 0.5);
 }
-
+/*
 .imgTop {
     display: block;
 }
-
+*/
 .fifty {
     position: absolute;
     top: 16%;
@@ -108,46 +71,29 @@ body-div {
 }
 
 /*-------------------------------------------HEADER FOR SMALL DISPLAYS */
-/* 
-.header-container-phones {
+.header-phones-row {
     background: url("../otherimages/hqdefault2.jpg");
     background-position: relative;
-    background-repeat: no-repeat top left fixed;
+    background-repeat: no-repeat top left fixed ;
     background-size: cover;
-    width: 100%;
-    min-height: 360px; 
-    max-width: 100%;
+    height: 40vh;
+    min-height: 360px;
+    top: 0;
+    left: 0;
     color: #ffff00;
+    -webkit-background-size: cover;	/* works on WebKit browsers */
+     -moz-background-size: cover;	/* works on Mozilla browsers */
+     -o-background-size: cover;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
-} */
-
-.header-phones-row {
-    background: url("../otherimages/hqdefault2.jpg"); 
-    background-repeat: no-repeat top left fixed;
-    background-size: cover;
-    position: relative;
-    top: 0;
-    left: 0; 
-   display: flex; 
-    width: 100%;
-    min-height: 360px;
-    max-width: 100%;
-    height: 70vh;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    
-    /* height: 0vh; */
 }
 
 .header-phones-column {
-    position: relative;
     width: 100%;
     padding: 0 0px 0px;
     min-height: 360px;
-    margin: 0 0px 0px 0;
+    margin: 0 0px 0px;
     float: none;
 }
 
